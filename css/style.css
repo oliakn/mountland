@@ -92,11 +92,21 @@ body {
 .hero {
   font-family: "Lora", sans-serif;
   padding-top: 90px;
-  position: relative;
   min-height: 100vh;
+  position: relative;
 }
-.hero__content {
+.hero__arrow {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -85%;
+  margin: auto;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.hero__container {
+  position: relative;
 }
 .hero__content_title {
   font-weight: 400;
@@ -118,18 +128,8 @@ body {
 }
 .hero_img {
   position: absolute;
-  right: 17%;
-  top: 300px;
-}
-.hero__arrow {
-  position: absolute;
-  top: 0;
-  left: 0;
   right: 0;
-  bottom: -85%;
-  margin: auto;
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
+  top: 200px;
 }
 @-webkit-keyframes mover {
   0% {
@@ -463,33 +463,6 @@ body {
   width: 100%;
   background: rgba(2, 22, 38, 0.5);
   background-blend-mode: darken;
-}
-
-.animate__fadeInRight {
-  animation-name: animate__fadeInRight;
-  animation-duration: 1.5s;
-}
-
-.animate__fadeinLeft {
-  animation-name: animate__fadeInLeft;
-  animation-duration: 1.5s;
-}
-
-@keyframes animate__fadeInRight {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 0;
-  }
-}
-@keyframes animate__fadeInLeft {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
