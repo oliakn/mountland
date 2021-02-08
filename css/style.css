@@ -241,7 +241,7 @@ body {
   text-align: center;
   background: rgba(25, 35, 49, 0.62);
   height: 100%;
-  padding: 72px 41px 24px 40px;
+  padding: 72px 42px 24px;
 }
 .tours_btn {
   width: 203px;
@@ -363,7 +363,7 @@ body {
 }
 
 .footer {
-  background: rgba(2, 22, 38, 0.83) url("../images/ftr.png");
+  background: rgba(2, 22, 38, 0.83) url("../images/ftr.png") no-repeat center/cover;
   background-blend-mode: darken;
   min-height: 548px;
   padding: 89px 0 92px;
