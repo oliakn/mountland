@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-4 {
+  padding: 0 15px;
+  width: 33.33333%;
+}
+
+.col-8 {
+  padding: 0 15px;
+  width: 66.66666%;
+}
+
+.main {
+  background: rgba(25, 35, 49, 0.62) url("../images/bg.png");
+  background-blend-mode: darken;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFF;
+  margin-left: 14px;
+  position: relative;
+}
+.navbar__link:hover {
+  color: #B6A4A4;
+}
+.navbar__link:hover:before {
+  transform: scale(1);
+}
+.navbar__link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #B6A4A4;
+  bottom: -3px;
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.hero {
+  font-family: "Lora", sans-serif;
+  padding-top: 90px;
+  position: relative;
+  min-height: 100vh;
+}
+.hero__content {
+  position: absolute;
+}
+.hero__content_title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 110.6%;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  background: #b6a4a4;
+  background: linear-gradient(180deg, #b6a4a4 40%, #a5acc2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 89px 0 32px;
+}
+.hero__content_subtitle {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  color: #A5ACC2;
+}
+.hero_img {
+  position: absolute;
+  right: 60px;
+  top: 300px;
+}
+.hero__arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -85%;
+  margin: auto;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  padding: 0 0 92px;
+}
+.about_title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #E3E3E5;
+  margin-top: 119px;
+}
+.about_desc {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.07em;
+  color: #E3E3E5;
+  margin-top: 170px;
+}
+
+.tours {
+  background: #021F38;
+  box-shadow: 0px -38px 35px 2px #021F38;
+}
+.tours__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #FFFFFF;
+  padding: 73px 0 55px;
+  text-align: center;
+}
+.tours__cities {
+  min-height: 446px;
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: center;
+}
+.tours_chui {
+  background: url("../images/chui.png") no-repeat center;
+}
+.tours_osh {
+  background: url("../images/osh.png") no-repeat center;
+}
+.tours_ik {
+  background: url("../images/ik.png") no-repeat center;
+}
+.tours_talas {
+  background: url("../images/talas.png") no-repeat center;
+}
+.tours_naryn {
+  background: url("../images/naryn.png") no-repeat center;
+}
+.tours_ja {
+  background: url("../images/jalal-abad.png") no-repeat center;
+}
+.tours__city {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133.7%;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+.tours__cities {
+  position: relative;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.tours__cities:hover .tours__info {
+  bottom: 0;
+}
+.tours__cities:hover .tours__headings {
+  display: none;
+}
+.tours__desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 133.7%;
+  text-align: center;
+  font-style: italic;
+  max-width: 238px;
+  color: #FFFFFF;
+}
+.tours__info {
+  position: absolute;
+  bottom: -100%;
+  transition: 0.7s;
+  text-align: center;
+  background: rgba(25, 35, 49, 0.62);
+  height: 100%;
+  padding: 72px 41px 24px 40px;
+}
+.tours_btn {
+  width: 203px;
+  height: 49px;
+  background: rgba(171, 156, 158, 0.77);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  border: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  position: absolute;
+  right: 0;
+  bottom: -80%;
+  left: 0;
+  top: 0;
+  margin: auto;
+}
+
+.cards {
+  padding-bottom: 135px;
+}
+
+.video {
+  height: 765px;
+  background: linear-gradient(180.07deg, rgba(2, 31, 56, 0) 0.06%, #AF9FA0 99.94%), #021F38;
+}
+.video__content {
+  background: rgba(2, 22, 38, 0.5) url("../images/video.png");
+  background-blend-mode: darken;
+  border-radius: 5px;
+  height: 645px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages {
+  background: #AF9FA0;
+  min-height: 679px;
+}
+.advantages__container {
+  display: flex !important;
+  justify-content: space-between;
+}
+.advantages__desc {
+  max-width: 560px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2B3757;
+}
+.advantages__desc:not(:last-child) {
+  margin-bottom: 21px;
+}
+.advantages__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #192331;
+}
+.advantages__subtitle {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  color: #101E45;
+}
+
+.clients {
+  background: linear-gradient(180deg, #AF9FA0 0%, rgba(255, 255, 255, 0) 100%), #29446B;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 724px;
+  color: #FFFFFF;
+}
+.clients__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #192331;
+  display: flex;
+  justify-content: center;
+  padding: 91px 0 31px;
+}
+.clients__card {
+  min-height: 446px;
+  background: rgba(25, 35, 49, 0.9);
+  border-radius: 5px;
+  width: 319px;
+  margin: 0 45px;
+  position: relative;
+}
+.clients__desc {
+  margin: 60px 27px 0;
+  font-size: 14px;
+  line-height: 133.7%;
+  letter-spacing: 0.03em;
+}
+.clients__cards {
+  min-height: 446px;
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: center;
+}
+.clients__info {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+  position: absolute;
+  bottom: 35px;
+}
+.clients__name {
+  margin-left: 13px;
+}
+.clients__quote {
+  position: absolute;
+  top: 16px;
+  right: 27px;
+}
+
+.footer {
+  background: rgba(2, 22, 38, 0.83) url("../images/ftr.png");
+  background-blend-mode: darken;
+  min-height: 548px;
+  padding: 89px 0 92px;
+  color: #FFFFFF;
+}
+.footer__container {
+  display: flex;
+}
+.footer__forms {
+  display: flex;
+  flex-direction: column;
+  max-width: 411px;
+}
+.footer__forms_title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+}
+.footer__info {
+  padding-left: 170px;
+}
+.footer__info_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+.footer__info_desc {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.footer__socials {
+  padding-left: 112px;
+}
+.footer__social {
+  margin-left: 28px;
+}
+.footer__items {
+  display: flex;
+  align-items: center;
+}
+.footer__items:not(:last-child) {
+  margin-bottom: 48px;
+}
+.footer__forms input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px #FFFFFF solid;
+  height: 50px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.footer__forms textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px #FFFFFF solid;
+  height: 50px;
+  padding-left: 10px;
+}
+.footer__forms ::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", sans-serif;
+}
+.footer img {
+  margin-right: 16px;
+}
+
+.copyright {
+  background: #021626;
+  padding: 30px 0;
+}
+.copyright__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright__content p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #A5ACC2;
+}
+
+.map {
+  height: 644px;
+  position: relative;
+}
+.map__box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(2, 22, 38, 0.5);
+  background-blend-mode: darken;
+}
+
+.animate__fadeInRight {
+  animation-name: animate__fadeInRight;
+  animation-duration: 1.5s;
+}
+
+.animate__fadeinLeft {
+  animation-name: animate__fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+@keyframes animate__fadeInRight {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes animate__fadeInLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
