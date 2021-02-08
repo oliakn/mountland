@@ -46,7 +46,7 @@ body {
 }
 
 .main {
-  background: rgba(25, 35, 49, 0.62) url("../images/bg.png");
+  background: rgba(25, 35, 49, 0.62) url("../images/bg.png") no-repeat center/cover;
   background-blend-mode: darken;
 }
 
