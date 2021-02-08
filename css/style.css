@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 15px;
@@ -119,7 +118,7 @@ body {
 }
 .hero_img {
   position: absolute;
-  right: 60px;
+  right: 17%;
   top: 300px;
 }
 .hero__arrow {
