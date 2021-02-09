@@ -8,11 +8,13 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Open+Sans:wght@300;400;600;700;800&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 <main class="main">
@@ -30,10 +32,16 @@
                 <a href="#" class="navbar__link">GALLERY</a>
                 <a href="#footer" class="navbar__link">CONTACTS</a>
             </nav>
+            <div class="header_menu">
+                <span></span>
+            </div>
         </div>
     </header>
     <section class="hero">
-        <a href="#about"><img src="./images/arrow.svg" alt="" class="hero__arrow"></a>
+        <a href="#about">
+            <img src="./images/Ellipse%201.svg" alt="" class="hero__ellipse">
+            <img src="./images/Arrow%201.svg" alt="" class="hero__arrow">
+        </a>
         <div class="container hero__container">
             <div class="hero__content animate__animated animate__fadeinLeft">
                 <h1 class="hero__content_title">The most <br> beautiful places <br> in the Kyrgyzstan</h1>
@@ -81,7 +89,7 @@
                         <p class="tours__desc">Journey to the ancient structure of the X-XI centuries, protected by the
                             state as a
                             first-class cultural heritage monument. </p>
-                        <button class="tours_btn">BOOK NOW</button>
+                        <a href="#" class="tours_btn">BOOK NOW</a>
                     </div>
                 </div>
                 <div class="col-4 tours_osh tours__cities">
@@ -247,10 +255,9 @@
     </div>
 </section>
 <section class="map">
-    <div class="map__box"></div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2734385.5570298773!2d72.52157345657935!3d41.43011599926608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3897381dfce927f3%3A0x281058b74e88c433!2z0JrQuNGA0LPQuNC30LjRjw!5e0!3m2!1sru!2sae!4v1612738578460!5m2!1sru!2sae"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+    <div id="map">
+
+    </div>
 </section>
 <footer class="footer" id="footer">
     <div class="container footer__container">
@@ -280,7 +287,8 @@
                     <h3 class="footer__info_title">
                         Use Contact Form:
                     </h3>
-                    <p class="footer__info_desc">Fill in the fields in Contact Form <br> and ask questions you are <br> interested
+                    <p class="footer__info_desc">Fill in the fields in Contact Form <br> and ask questions you are <br>
+                        interested
                         in.</p>
                 </div>
             </div>
@@ -338,6 +346,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1JxsBzPGjhusEs2PK4kP-ZxGllebT6A&callback=initMap"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
