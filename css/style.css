@@ -555,6 +555,7 @@ body {
 
 .card-btn {
   border: 3px solid #FFFFFF;
+  border-radius: 10px;
   width: 235px;
   height: 63px;
   font-weight: 300;
@@ -569,9 +570,16 @@ body {
 .card-desc {
   padding: 29px;
   background: rgba(175, 159, 160, 0.51);
+  border-radius: 10px;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+}
+
+.tours__map {
+  position: relative;
+  right: 0;
+  top: -100px;
 }
 
 .gps {
@@ -581,6 +589,16 @@ body {
   right: 0;
   bottom: 114px;
   margin: auto;
+}
+
+.tours__video {
+  background: rgba(24, 43, 97, 0.51);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 358px;
+  margin-top: 77px;
 }
 
 .hero__wrapper {
@@ -598,12 +616,13 @@ body {
 }
 
 .hero__form {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(25, 35, 49, 0.71) url("../images/bg.png") no-repeat center/cover;
+  border-radius: 10px;
+  background-blend-mode: darken;
   font-weight: 600;
   font-size: 34px;
   line-height: 52px;
-  border-radius: 10px;
-  color: #2B3757;
+  color: #edf0fd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -616,7 +635,7 @@ body {
   transition: all 0.8s ease 0s;
 }
 .hero__form_title {
-  color: rgba(24, 43, 97, 0.51);
+  color: #edf0fd;
   position: relative;
 }
 .hero__form_title:before {
@@ -624,7 +643,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: rgba(24, 43, 97, 0.51);
+  background-color: #edf0fd;
   top: 0;
   left: 0;
   right: 0;
@@ -634,22 +653,22 @@ body {
 .hero__form input {
   width: 100%;
   background: rgba(24, 43, 97, 0.51);
+  border: 0.2px solid white;
   color: #FFFFFF;
   border-radius: 10px;
-  border: none;
   height: 49px;
   margin-top: 10px;
   padding-left: 10px;
 }
 .hero__form input::placeholder {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Open Sans", sans-serif;
 }
 
 .hero-btn {
   width: 203px;
   height: 49px;
-  background: #2B3757;
+  background: #021626;
   color: #FFFFFF;
   border-radius: 50px;
   border: none;
@@ -671,6 +690,110 @@ body {
   position: absolute;
   right: 50px;
   top: 20px;
+}
+
+.header__tours {
+  background-color: rgba(38, 60, 82, 0.4);
+}
+
+.hero__tours {
+  background: url("../images/bg-tours.png") no-repeat center/cover;
+  padding: 122px 0 54px;
+}
+.hero__tours .btn_box {
+  padding-bottom: 21px;
+}
+.hero__tours_btn {
+  margin: 0 auto;
+}
+.hero__tours_container {
+  text-align: center;
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.hero__tours__content {
+  border-radius: 15px;
+  min-height: 369px;
+  position: relative;
+  margin: 0 auto;
+}
+.hero__tours__content-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 133.7%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.hero__tours__content-desc {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 133.7%;
+  min-height: 230px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 0 41px;
+  color: #FFFFFF;
+}
+.hero__tours-content__suptitle {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.content {
+  margin-top: 28px;
+}
+
+.bg-jalal {
+  background: rgba(25, 35, 49, 0.73) url("../images/jalal-abad.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.bg-chui {
+  background: rgba(25, 35, 49, 0.73) url("../images/chui.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.bg-talas {
+  background: rgba(25, 35, 49, 0.73) url("../images/talas.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.bg-osh {
+  background: rgba(25, 35, 49, 0.73) url("../images/osh.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.bg-issykkol {
+  background: rgba(25, 35, 49, 0.73) url("../images/ik.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.bg-naryn {
+  background: rgba(25, 35, 49, 0.73) url("../images/naryn.png") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  background: rgba(171, 156, 158, 0.77);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  height: 49px;
+  width: 203px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
