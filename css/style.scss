@@ -262,14 +262,19 @@ body {
     font-size: 48px;
     line-height: 65px;
     color: #FFFFFF;
-    padding-bottom: 55px;
+    padding-bottom: 15px;
     text-align: center;
     display: block;
 
 
   }
-  a:hover {
-
+  &__suptitle{
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
 
   }
   &__cities {
@@ -683,18 +688,6 @@ body {
 
 }
 
-//.video_btn{
-//  font-size: 36px;
-//  line-height: 49px;
-//  color: #FFFFFF;
-//  background: transparent;
-//  border: 1px solid #FFFFFF;
-//  padding:20px 25px;
-//  cursor:pointer;
-//  border-radius:50px;
-//  width: 300px;
-//
-//}
 .hero__wrapper {
   height: 100%;
   width: 100%;

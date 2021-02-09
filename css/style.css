@@ -240,8 +240,16 @@ body {
   font-size: 48px;
   line-height: 65px;
   color: #FFFFFF;
-  padding-bottom: 55px;
+  padding-bottom: 15px;
   text-align: center;
+  display: block;
+}
+.tours__suptitle {
+  font-weight: 500;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 15px;
   display: block;
 }
 .tours__cities {
