@@ -244,11 +244,6 @@ body {
   text-align: center;
   display: block;
 }
-.tours a:hover {
-  background: #ee0942;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 .tours__cities {
   min-height: 446px;
   display: flex !important;
@@ -733,7 +728,7 @@ body {
   margin: 0 auto;
 }
 .hero__tours__content-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 133.7%;
   letter-spacing: 0.03em;
