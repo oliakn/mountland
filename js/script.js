@@ -2,7 +2,12 @@ document.querySelector('.header_menu').addEventListener('click', () => {
     document.querySelector('.navbar').classList.toggle('show')
     document.querySelector('.header_menu').classList.toggle('active')
 })
+document.querySelectorAll('.navbar__link').forEach(e => e.addEventListener('click', () => {
+    document.querySelector('.navbar').classList.remove('show')
+    document.querySelector('.header_menu').classList.remove('active')
+}))
 document.querySelector('.card-btn').addEventListener('click', () => {
+    console.log('test')
     document.querySelector('.hero__wrapper').classList.toggle('wrapper-show')
 })
 document.querySelector('.hero__close').addEventListener('click', () => {
