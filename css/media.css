@@ -1,6 +1,17 @@
 @media (max-width: 1200px) {
     .container {
-        Max-width: 960px
+        Max-width: 960px;
+        padding:0 15px;
+    }
+    .hero__tours__content-title {
+        font-size: 30px;
+        line-height: 120%;
+    }
+    .tours__map-img{
+        width: 90%;
+    }
+    .hero__tours .col-4 {
+        padding: 0 15px;
     }
 
     .hero_img {
@@ -111,10 +122,19 @@
     .hero__content_title {
         font-size: 58px;
     }
+<<<<<<< HEAD
 
 
     .hero_img {
         display: none;
+=======
+    .hero__tours__content_suptitle {
+        font-size: 35px;
+        line-height: 56px;
+    }
+    .about_title{
+        font-size: 36px;
+>>>>>>> c44cec911cb12e8e56037786dcc1b41f9fbceca0
     }
 
     .tours__title {
@@ -184,6 +204,7 @@
     .hero_img{
         display: none;
     }
+<<<<<<< HEAD
     .video__content{
         height: 500px;
     }
@@ -193,6 +214,23 @@
     }
     .mnt{
         top: 85%;
+=======
+    .col-4{
+        width: 50%;
+    }
+    .display{
+        display: none;
+    }
+    .tours__video{
+        width: 100%;
+    }
+    .width{
+        width: 100%;
+        order:2;
+    }
+    .card-title{
+        font-size: 32px;
+>>>>>>> c44cec911cb12e8e56037786dcc1b41f9fbceca0
     }
 }
 
@@ -201,13 +239,34 @@
     .container {
         Max-width: none
     }
+    .tours__map-img{
+        margin-top:10px;
+    }
+
 
     .hero__content_title {
         font-size: 52px;
     }
+    .col-4{
+        width: 50%;
+    }
+    .hero__tours .col-4 {
+        padding: 0 45px;
+    }
 
-    .hero__content_subtitle {
+    .hero__tours__content_suptitle {
         font-size: 28px;
+        line-height: 56px;
+    }
+    .hero__tours__content-title {
+        font-size: 22px;
+        line-height: 120%;
+    }
+    .display{
+        display: flex;
+        order: 1;
+        width: 100%;
+        text-align: center;
     }
 
     .about_title {
@@ -349,6 +408,23 @@
         font-size: 18px;
         padding-bottom: 150px;
     }
+    .card-btn{
+        margin:20px 0 0;
+    }
+    .video__btn{
+        width: 220px;
+        padding: 20px 25px;
+        font-size: 30px;
+    }
+    .card-title{
+        font-size: 28px;
+    }
+    .card-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
 }
 
 @media (max-width: 540px) {
@@ -391,13 +467,66 @@
     .hero__content_title {
         font-size: 48px;
     }
-    .hero__content_subtitle {
+    .hero__content_suptitle {
         font-size: 22px;
     }
+<<<<<<< HEAD
+=======
+    .video_btn{
+        width: 180px;
+        padding: 10px 25px;
+        font-size: 23px;
+    }
+    .hero__tours_btn{
+        width: 180px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .hero__tours__content-desc{
+        font-size: 15px;
+    }
+    .card-btn{
+        width: 215px;
+    }
+    .tours__map-img{
+        display: none;
+    }
+
+    .row{
+        margin:0;
+    }
+>>>>>>> c44cec911cb12e8e56037786dcc1b41f9fbceca0
 
 }
 
 @media (max-width: 480px) {
+    .col-4{
+        width: 100%;
+    }
+    .hero__tours_btn{
+        width: 150px;
+        font-size: 15px;
+
+    }
+
+    .video_btn{
+        width: 180px;
+        padding: 10px 25px;
+        font-size: 23px;
+    }
+    .row{
+        margin:0;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .hero__tours__content-desc{
+        font-size: 15px;
+    }
     .hero__content_title {
         font-size: 38px;
     }
@@ -405,6 +534,7 @@
     .hero__content_subtitle {
         font-size: 18px;
     }
+<<<<<<< HEAD
 
     .advantages__container {
         flex-direction: column;
@@ -447,6 +577,13 @@
     .mnt{
         top: 88%;
 
+=======
+    .tours__map-img{
+        display: none;
+    }
+    .hero__tours .col-4 {
+        padding: 0 15px;
+>>>>>>> c44cec911cb12e8e56037786dcc1b41f9fbceca0
     }
 }
 

@@ -31,7 +31,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
 }
 
 .col-4 {
@@ -585,14 +584,15 @@ body {
   background-blend-mode: darken;
 }
 
+.card-logo {
+  display: flex;
+  align-items: center;
+}
+
 .card-title {
   font-size: 38px;
   line-height: 52px;
   color: #FFFFFF;
-}
-
-.card-logo {
-  display: flex;
 }
 
 .card-inner {
@@ -750,23 +750,25 @@ body {
   background: url("../images/bg-tours.png") no-repeat center/cover;
   padding: 122px 0 54px;
 }
+<<<<<<< HEAD
 .hero__tours-content__suptitle {
   font-size: 48px;
   line-height: 56px;
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 500;
+=======
+.hero__tours .hero__tours_container {
+  text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+>>>>>>> c44cec911cb12e8e56037786dcc1b41f9fbceca0
 }
 .hero__tours .btn_box {
   padding-bottom: 21px;
 }
 .hero__tours_btn {
-  margin: 0 auto;
-}
-.hero__tours_container {
-  text-align: center;
-  max-width: 1170px;
-  padding: 0 30px;
   margin: 0 auto;
 }
 .hero__tours__content {
@@ -794,16 +796,12 @@ body {
   padding: 0 41px;
   color: #FFFFFF;
 }
-.hero__tours-content__suptitle {
+.hero__tours__content_suptitle {
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 0.03em;
   color: #fff;
   font-weight: 600;
-}
-
-.content {
-  margin-top: 28px;
 }
 
 .bg-jalal {
@@ -852,6 +850,15 @@ body {
   align-items: center;
   cursor: pointer;
   border: none;
+}
+
+.hero__tours .col-4 {
+  padding: 0 45px;
+}
+
+.content {
+  margin-top: 28px;
+  display: flex;
 }
 
 .gallery {
