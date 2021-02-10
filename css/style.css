@@ -31,7 +31,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -45px;
 }
 
 .col-4 {
@@ -536,14 +535,15 @@ body {
   background-blend-mode: darken;
 }
 
+.card-logo {
+  display: flex;
+  align-items: center;
+}
+
 .card-title {
   font-size: 38px;
   line-height: 52px;
   color: #FFFFFF;
-}
-
-.card-logo {
-  display: flex;
 }
 
 .card-inner {
@@ -704,6 +704,7 @@ body {
   text-align: center;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .hero__tours .btn_box {
   padding-bottom: 21px;
@@ -736,7 +737,7 @@ body {
   padding: 0 41px;
   color: #FFFFFF;
 }
-.hero__tours-content__suptitle {
+.hero__tours__content_suptitle {
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 0.03em;
@@ -797,6 +798,7 @@ body {
 
 .content {
   margin-top: 28px;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
