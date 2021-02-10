@@ -2,24 +2,162 @@
     .container {
         Max-width: 960px
     }
+
+    .hero_img {
+        height: 275px;
+    }
+
+    .hero__ellipse {
+        height: 50px;
+    }
+
+    .hero__arrow {
+        width: 17px;
+    }
+
+    .tours__title {
+        font-size: 44px;
+    }
+
+    .tours__suptitle {
+        font-size: 34px;
+    }
+
+    .advantages__title {
+        font-size: 42px;
+    }
+
+    .advantages__img {
+        height: 325px;
+    }
+
+    .advantages__subtitle {
+        font-size: 34px;
+    }
+
+    .advantages__desc {
+        font-size: 20px;
+    }
+
+    .clients__title {
+        font-size: 44px;
+    }
+
+    .footer__forms_title {
+        font-size: 42px;
+    }
+
+    .footer__info_title {
+        font-size: 20px;
+    }
+
+    .footer__info_desc {
+        font-size: 16px;
+    }
+
+    .footer_img {
+        height: 56px;
+    }
+
+    .footer__info {
+        padding-left: 110px;
+    }
+
+    .footer__socials {
+        padding-left: 30px;
+    }
+
+    .footer__social {
+        margin-left: 10px;
+    }
+
+    .copyright__content p {
+        font-size: 16px
+    }
 }
+
 
 @media (max-width: 992px) {
     .container {
         Max-width: 750px
     }
+
     .hero__content_title {
         font-size: 58px;
     }
-    .about_title{
+
+    .about_title {
         font-size: 36px;
     }
-    .about_desc{
+
+    .about_desc {
         font-size: 26px;
     }
-    .hero_img{
+
+    .hero_img {
         display: none;
     }
+
+    .tours__title {
+        font-size: 38px;
+    }
+
+    .tours__suptitle {
+        font-size: 23px;
+    }
+
+    .advantages__title {
+        font-size: 38px;
+    }
+
+    .advantages__img {
+        height: 275px;
+    }
+
+    .advantages__subtitle {
+        font-size: 23px;
+    }
+
+    .advantages__desc {
+        font-size: 14px;
+    }
+
+    .advantages__items {
+        padding-top: 40px;
+    }
+
+    .clients__title {
+        font-size: 38px;
+    }
+
+    .footer__forms_title {
+        font-size: 30px;
+    }
+
+    .footer__info_title {
+        font-size: 18px;
+    }
+
+    .footer__info_desc {
+        font-size: 14px;
+    }
+
+    .footer_img {
+        height: 48px;
+    }
+
+    .footer__info {
+        padding-left: 90px;
+    }
+
+    .footer__socials {
+        padding-left: 20px;
+    }
+
+    .footer__social {
+        margin-left: 10px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -45,16 +183,19 @@
 
     .navbar {
         display: none;
+
     }
 
     .header_menu {
         display: block;
+        position: relative;
+        z-index: 65;
     }
 
     .navbar.show {
         background-color: #AF9FA0;
         height: 100%;
-        width: 100%;
+        width: 50%;
         display: flex;
         position: fixed;
         top: 0;
@@ -63,23 +204,112 @@
         align-items: center;
         flex-direction: column;
         z-index: 1;
-        padding: 20px 0;
         transition: .6s;
     }
 
     .navbar.show {
         text-align: center;
-        right: 0;
         display: flex;
-        padding: 20px 0;
+    }
+
+    .navbar.show {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .header_menu.active span:before {
+        transform: rotate(
+                45deg
+        );
+        top: 0;
+    }
+
+    .header_menu.active span:after {
+        transform: rotate(
+                -45deg
+        );
+        top: 0;
+    }
+
+    .header_menu.active span {
+        background-color: transparent;
+    }
+
+    .tours__title {
+        font-size: 32px;
+    }
+
+    .tours__suptitle {
+        font-size: 16px;
+    }
+
+    .advantages__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__img {
+        height: 173px;
+    }
+
+    .advantages__subtitle {
+        font-size: 16px;
+    }
+
+    .advantages__desc {
+        font-size: 12px;
+    }
+
+    .advantages__items {
+        padding-top: 20px;
+    }
+
+    .clients__title {
+        font-size: 32px;
+    }
+
+    .copyright__content p {
+        font-size: 14px
     }
 }
-@media (max-width: 540px){
+
+@media (max-width: 540px) {
     .hero__content_title {
         font-size: 48px;
     }
+
     .hero__content_subtitle {
         font-size: 22px;
+    }
+
+    .tours__title {
+        font-size: 28px;
+    }
+
+    .tours__suptitle {
+        font-size: 14px;
+    }
+
+    .advantages__title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__img {
+        height: 143px;
+    }
+
+    .advantages__subtitle {
+        font-size: 14px;
+    }
+
+    .advantages__items {
+        padding-top: 10px;
+    }
+
+    .clients__title {
+        font-size: 28px;
     }
 }
 
@@ -87,8 +317,30 @@
     .hero__content_title {
         font-size: 38px;
     }
+
     .hero__content_subtitle {
         font-size: 18px;
+    }
+
+    .advantages__container {
+        flex-direction: column;
+    }
+
+    .tours__title {
+        font-size: 18px;
+    }
+
+    .clients__title {
+        font-size: 18px;
+    }
+
+    .copyright__content p {
+        font-size: 12px
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
     }
 }
 

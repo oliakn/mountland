@@ -232,6 +232,7 @@ body {
   width: 100%;
   display: flex;
   padding: 0 0 92px;
+  position: relative;
 
   &_title {
     font-weight: 600;
@@ -239,17 +240,44 @@ body {
     line-height: 65px;
     letter-spacing: 0.03em;
     color: #E3E3E5;
-    margin-top: 119px;
+    margin-top: 100px;
   }
 
   &_desc {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.07em;
     color: #E3E3E5;
-    margin-top: 170px;
+    text-align: right;
+    margin-top: 150px;
+    &_center{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.07em;
+      color: #AF9FA0;
+      margin: 30px 0;
+    }
+    &_left{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 38px;
+      letter-spacing: 0.07em;
+      color: #FFFFFF;
+      padding-bottom: 350px;
+    }
   }
+}
+.mnt{
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .tours {
@@ -257,23 +285,31 @@ body {
   box-shadow: 0px -38px 35px 2px #021F38;
   padding: 73px 0 135px;
 
+
   &__title {
     font-weight: 600;
     font-size: 48px;
     line-height: 65px;
     color: #FFFFFF;
-    padding-bottom: 55px;
+    padding-bottom: 15px;
     text-align: center;
     display: block;
+  }
 
+  &__suptitle {
+    font-weight: 500;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    &:hover {
+      font-size: 30px;
+      text-shadow: 0px 5px 4px rgba(171, 156, 158, 0.77);
+    }
 
   }
-  a:hover {
-    background: #ee0942;
-    font-weight: 700;
-    letter-spacing: 1px;
 
-  }
   &__cities {
     min-height: 446px;
     display: flex !important;
@@ -389,7 +425,7 @@ body {
 
 .advantages {
   background: #AF9FA0;
-  min-height: 679px;
+  color: #101E45;
 
   &__container {
     display: flex !important;
@@ -399,8 +435,7 @@ body {
   &__desc {
     max-width: 560px;
     font-size: 24px;
-    line-height: 33px;
-    color: #2B3757;
+    font-weight: 400;
   }
 
   &__desc:not(:last-child) {
@@ -410,15 +445,14 @@ body {
   &__title {
     font-weight: 600;
     font-size: 48px;
-    line-height: 65px;
-    color: #192331;
+    color: #101E45;
   }
 
   &__subtitle {
     font-weight: 600;
     font-size: 42px;
-    line-height: 57px;
     color: #101E45;
+    margin-bottom: 6px;
   }
 }
 
@@ -526,10 +560,16 @@ body {
 
   &__socials {
     padding-left: 112px;
+    display: flex;
+    flex-direction: column;
+
   }
 
   &__social {
     margin-left: 28px;
+    height: 30px;
+    margin-bottom: 10px;
+
   }
 
   &__items {
@@ -685,18 +725,6 @@ body {
 
 }
 
-//.video_btn{
-//  font-size: 36px;
-//  line-height: 49px;
-//  color: #FFFFFF;
-//  background: transparent;
-//  border: 1px solid #FFFFFF;
-//  padding:20px 25px;
-//  cursor:pointer;
-//  border-radius:50px;
-//  width: 300px;
-//
-//}
 .hero__wrapper {
   height: 100%;
   width: 100%;
@@ -753,7 +781,7 @@ body {
   input {
     width: 100%;
     background: rgba(24, 43, 97, 0.51);
-    border: 0.2px  solid white;
+    border: 0.2px solid white;
     color: #FFFFFF;
     border-radius: 10px;
     height: 49px;
@@ -805,13 +833,15 @@ body {
 .hero__tours {
   background: url("../images/bg-tours.png") no-repeat center/cover;
   padding: 122px 0 54px;
-  &-content__suptitle{
+
+  &-content__suptitle {
     font-size: 48px;
     line-height: 56px;
     text-align: center;
     letter-spacing: 0.03em;
     font-weight: 500;
   }
+
   .btn_box {
     padding-bottom: 21px;
   }
@@ -835,7 +865,7 @@ body {
   }
 
   &__content-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     line-height: 133.7%;
     letter-spacing: 0.03em;
@@ -918,6 +948,7 @@ body {
   border: none;
 
 }
+
 .gallery {
   padding-top: 100px;
   background: #101E45;
