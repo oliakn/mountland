@@ -74,6 +74,32 @@
     .copyright__content p {
         font-size: 16px
     }
+    .slick-next {
+        right: -10px;
+    }
+    .slick-prev {
+        left: -10px;
+    }
+    .video__content{
+        height: 550px;
+    }
+    .hero_img {
+        display: none;
+    }
+    .about_title{
+        font-size: 40px;
+        line-height: 58px;
+    }
+    .about_desc{
+        font-size: 20px;
+    }
+    .about_desc_center{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .about_desc_left{
+        font-size: 20px;
+    }
 }
 
 
@@ -131,7 +157,7 @@
     }
 
     .footer__forms_title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .footer__info_title {
@@ -158,6 +184,23 @@
         margin-left: 10px;
     }
 
+    .hero__content_title {
+        font-size: 58px;
+    }
+    .about_title{
+        font-size: 36px;
+    }
+
+    .hero_img{
+        display: none;
+    }
+    .video__content{
+        height: 500px;
+    }
+    .footer__forms{
+        min-width: unset;
+        max-width: 411px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -204,6 +247,7 @@
         align-items: center;
         flex-direction: column;
         z-index: 1;
+        padding: 20px 0;
         transition: .6s;
     }
 
@@ -216,6 +260,9 @@
         position: fixed;
         top: 0;
         right: 0;
+    }
+    .navbar__link{
+        margin-bottom: 10px;
     }
 
     .header_menu.active span:before {
@@ -272,6 +319,28 @@
     .copyright__content p {
         font-size: 14px
     }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__forms{
+        margin-bottom: 25px;
+        min-width: 411px;
+    }
+    .footer__socials{
+        padding-left: 0;
+    }
+    .footer__info {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -311,6 +380,13 @@
     .clients__title {
         font-size: 28px;
     }
+    .hero__content_title {
+        font-size: 48px;
+    }
+    .hero__content_subtitle {
+        font-size: 22px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -338,9 +414,12 @@
         font-size: 12px
     }
 
-    .footer__container {
-        display: flex;
-        flex-direction: column;
+
+    .hero__content_subtitle {
+        font-size: 18px;
+    }
+    .footer__forms{
+        min-width: 360px;
     }
 }
 

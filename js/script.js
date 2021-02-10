@@ -1,3 +1,7 @@
+document.querySelector('.header_menu').addEventListener('click', () => {
+    document.querySelector('.navbar').classList.toggle('show')
+    document.querySelector('.header_menu').classList.toggle('active')
+})
 document.querySelector('.card-btn').addEventListener('click', () => {
     document.querySelector('.hero__wrapper').classList.toggle('wrapper-show')
 })
@@ -10,9 +14,7 @@ document.querySelector('.hero__wrapper').addEventListener('click', (e) => {
     }
 })
 
-document.querySelector('.header_menu').addEventListener('click', () => {
-    document.querySelector('.navbar').classList.toggle('show')
-})
+
 
 var map;
 

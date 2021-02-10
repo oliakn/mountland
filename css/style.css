@@ -257,6 +257,7 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  z-index: 1;
 }
 
 .tours {
@@ -280,10 +281,12 @@ body {
   text-align: center;
   margin-bottom: 15px;
   display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 50;
 }
 .tours__suptitle:hover {
-  font-size: 30px;
-  text-shadow: 0px 5px 4px rgba(171, 156, 158, 0.77);
+  text-shadow: 0 5px 4px rgba(171, 156, 158, 0.77);
 }
 .tours__cities {
   min-height: 446px;
@@ -369,8 +372,9 @@ body {
 }
 
 .video {
-  height: 765px;
+  padding: 50px 0;
   background: linear-gradient(180.07deg, rgba(2, 31, 56, 0) 0.06%, #AF9FA0 99.94%), #021F38;
+  margin-top: -1px;
 }
 .video__content {
   background: rgba(2, 22, 38, 0.5) url("../images/video.png");
@@ -385,6 +389,7 @@ body {
 .advantages {
   background: #AF9FA0;
   color: #101E45;
+  margin: -1px;
 }
 .advantages__container {
   display: flex !important;
@@ -474,7 +479,7 @@ body {
 .footer__forms {
   display: flex;
   flex-direction: column;
-  max-width: 411px;
+  min-width: 411px;
 }
 .footer__forms_title {
   font-weight: 600;
@@ -506,7 +511,7 @@ body {
 .footer__social {
   margin-left: 28px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .footer__items {
   display: flex;
@@ -850,8 +855,68 @@ body {
 }
 
 .gallery {
-  padding-top: 100px;
-  background: #101E45;
+  padding: 100px 0;
+  background: url("../images/gallery_bg.jpg") no-repeat center/cover;
+}
+.gallery__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #FFFFFF;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.gallery_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.gallery__item1 {
+  overflow: hidden;
+}
+
+.gallery_img:hover {
+  transform: translateY(-10px) scale(1.5);
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(36, 40, 35, 0.5);
+  width: 100%;
+  height: 50%;
+  bottom: -20px;
+  left: 0;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay:hover {
+  bottom: 0;
+}
+
+.discover__title {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 133.7%;
+  color: #FFFFFF;
+  margin-bottom: 13px;
+}
+.discover__item {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: 0.6s;
+}
+.discover__item:hover .overlay {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
